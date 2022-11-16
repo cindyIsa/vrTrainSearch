@@ -1,24 +1,11 @@
-# vr-copy
+# vr ticket search copy for just practise
 
 ## Project setup
 ```
-yarn install
+the data of train ticket is from https://rata.digitraffic.fi
+
+the ui is from naive-ui
+
+
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
