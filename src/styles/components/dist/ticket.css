@@ -1,0 +1,91 @@
+.buyTicket {
+  background-color: #333333;
+  border-radius: 5px;
+  padding: 20px;
+}
+.buyTicket .infoInput, .buyTicket .confirmWraper .confirm {
+  border-radius: 4px;
+  background-color: #404040;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-items: left;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 0 0 20px;
+  cursor: pointer;
+}
+.buyTicket .lactionRow {
+  border-radius: 5px;
+  position: relative;
+}
+.buyTicket .lactionRow .swap {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  background: #90959d;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.buyTicket .lactionRow .active {
+  background: green;
+}
+.buyTicket .infoRow :deep(.n-input .n-input__input-el) {
+  height: 50px;
+}
+.buyTicket .infoRow .infoInput, .buyTicket .infoRow .confirmWraper .confirm, .buyTicket .confirmWraper .infoRow .confirm {
+  height: 50px;
+}
+.buyTicket .infoRow .infoInput .details, .buyTicket .infoRow .confirmWraper .confirm .details, .buyTicket .confirmWraper .infoRow .confirm .details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.buyTicket .infoRow .infoInput .details .detail-icons, .buyTicket .infoRow .confirmWraper .confirm .details .detail-icons, .buyTicket .confirmWraper .infoRow .confirm .details .detail-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.buyTicket .infoRow .infoInput .details .detail-icons .pet, .buyTicket .infoRow .confirmWraper .confirm .details .detail-icons .pet, .buyTicket .confirmWraper .infoRow .confirm .details .detail-icons .pet,
+.buyTicket .infoRow .infoInput .details .detail-icons .transport,
+.buyTicket .infoRow .confirmWraper .confirm .details .detail-icons .transport,
+.buyTicket .confirmWraper .infoRow .confirm .details .detail-icons .transport {
+  display: flex;
+  flex-direction: row;
+  background: #0078d3;
+  margin-right: 10px;
+  font-size: 20px;
+  align-items: center;
+}
+.buyTicket .confirmWraper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.buyTicket .confirmWraper .confirm {
+  width: 30%;
+  margin-top: 10px;
+  justify-content: center;
+}
+.buyTicket .confirmWraper .active {
+  background: green;
+}
+
+@media only screen and (max-width: 639px) {
+  .buyTicket .lactionRow .swap {
+    left: 90%;
+  }
+
+  .buyTicket .confirmWraper .confirm {
+    width: 100%;
+  }
+}
